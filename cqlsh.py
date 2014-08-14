@@ -1,5 +1,4 @@
-#!/bin/sh
-# -*- mode: Python -*-
+#!/usr/bin/env python
 
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -17,17 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-""":"
-# bash code here; finds a suitable python interpreter and execs this file.
-# prefer unqualified "python" if suitable:
-python -c 'import sys; sys.exit(not (0x020500b0 < sys.hexversion < 0x03000000))' 2>/dev/null \
-    && exec python "$0" "$@"
-for pyver in 2.6 2.7 2.5; do
-    which python$pyver > /dev/null 2>&1 && exec python$pyver "$0" "$@"
-done
-echo "No appropriate python interpreter found." >&2
-exit 1
-":"""
 
 from __future__ import with_statement
 
