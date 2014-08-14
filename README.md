@@ -17,5 +17,5 @@ Windows
 --
 add path to system PATH variable  
 ```
-$ cqlsh.py --help
+$ cqlsh --help
 ```
