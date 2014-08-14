@@ -6,6 +6,8 @@ Standalone CQLSH executable (extracted from cassandra source)
 
 Installation  
 ==
+Clone or download the repo.  
+
 Linux  
 --
 ```
