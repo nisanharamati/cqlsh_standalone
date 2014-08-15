@@ -19,5 +19,6 @@ Windows
 --
 add path to system PATH variable  
 ```
+$ mklink cqlsh cqlsh.py
 $ cqlsh --help
 ```
