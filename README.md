@@ -25,6 +25,5 @@ $ cqlsh --help
 
 
 
-TO DO
---
+###### TO DO
 create actual installers ;)
